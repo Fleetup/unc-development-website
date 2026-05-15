@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  /* ─── Color Tokens ─────────────────────────────────────────── */
+  --color-cream:        #FAFAF7;
+  --color-ink:          #171717;
+  --color-accent:       #C7541A;
+  --color-cream-dark:   #F0EFE9;
+  --color-muted:        #6B6B68;
+  --color-border:       #E5E3DC;
+
+  /* Dark mode palette (configured, not applied yet) */
+  --color-dark-bg:      #1A1916;
+  --color-dark-text:    #F5F4EE;
+  --color-dark-accent:  #E07A4A;
+
+  /* ─── Typography Families ───────────────────────────────────── */
+  --font-display:       'Instrument Serif', Georgia, serif;
+  --font-body:          'Inter', system-ui, sans-serif;
+
+  /* ─── Display Type Scale ────────────────────────────────────── */
+  --text-display-xl:           6rem;
+  --text-display-xl--line-height: 1;
+  --text-display-xl--letter-spacing: -0.04em;
+
+  --text-display-lg:           4.5rem;
+  --text-display-lg--line-height: 1.05;
+  --text-display-lg--letter-spacing: -0.03em;
+
+  --text-display-md:           3rem;
+  --text-display-md--line-height: 1.1;
+  --text-display-md--letter-spacing: -0.02em;
+
+  --text-display-sm:           2rem;
+  --text-display-sm--line-height: 1.15;
+  --text-display-sm--letter-spacing: -0.02em;
+
+  --text-body-lg:              1.125rem;
+  --text-body-lg--line-height: 1.6;
+
+  --text-body:                 1rem;
+  --text-body--line-height:    1.6;
+
+  --text-caption:              0.875rem;
+  --text-caption--line-height: 1.4;
+}
+
+/* ─── Utility: Display font ───────────────────────────────────── */
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* ─── Base Styles ─────────────────────────────────────────────── */
+@layer base {
+  html {
+    font-family: var(--font-body);
+    color: var(--color-ink);
+    background-color: var(--color-cream);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
