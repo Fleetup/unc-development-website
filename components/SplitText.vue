@@ -14,15 +14,19 @@
     -->
     <template v-for="(line, lineIdx) in lines" :key="`l${lineIdx}`">
       <span class="split-line">
-        <template v-for="(unit, unitIdx) in line" :key="`l${lineIdx}u${unitIdx}`">
-          <span
-            class="split-mask"
-            :style="{ '--i': cumulativeIndex(lineIdx, unitIdx) }"
-            aria-hidden="true"
-          >
-            <span class="split-inner">{{ unit.text }}</span>
+        <template v-for="(word, wordIdx) in lineWords(lineIdx)" :key="`l${lineIdx}w${wordIdx}`">
+          <span class="split-word">
+            <template v-for="(unit, unitIdx) in word.units" :key="`l${lineIdx}w${wordIdx}u${unitIdx}`">
+              <span
+                class="split-mask"
+                :style="{ '--i': unit.globalIdx }"
+                aria-hidden="true"
+              >
+                <span class="split-inner">{{ unit.text }}</span>
+              </span>
+            </template>
           </span>
-          <span v-if="unit.trailingSpace" class="split-space">&nbsp;</span>
+          <span v-if="word.trailingSpace" class="split-space">&nbsp;</span>
         </template>
       </span>
       <!-- Force line break between explicit lines -->
@@ -115,6 +119,30 @@ function cumulativeIndex(lineIdx: number, unitIdx: number): number {
   return i
 }
 
+// Group chars into words so each word can be wrapped in a nowrap span,
+// preventing mid-word line breaks on small screens.
+interface WordGroup {
+  units: { text: string; globalIdx: number }[]
+  trailingSpace: boolean
+}
+
+function lineWords(lineIdx: number): WordGroup[] {
+  const units = lines.value[lineIdx]
+  const words: WordGroup[] = []
+  let current: WordGroup = { units: [], trailingSpace: false }
+
+  units.forEach((unit, unitIdx) => {
+    current.units.push({ text: unit.text, globalIdx: cumulativeIndex(lineIdx, unitIdx) })
+    if (unit.trailingSpace) {
+      current.trailingSpace = true
+      words.push(current)
+      current = { units: [], trailingSpace: false }
+    }
+  })
+  if (current.units.length) words.push(current)
+  return words
+}
+
 // ── Reveal trigger (IntersectionObserver) ────────────────────────────────
 const rootEl = ref<HTMLElement | null>(null)
 const isVisible = ref(false)
@@ -178,6 +206,11 @@ const rootStyle = computed(() => ({
 
 .split-line {
   display: inline;
+}
+
+.split-word {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .split-space {

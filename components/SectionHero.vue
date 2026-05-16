@@ -127,7 +127,7 @@
             <div class="border-l border-[var(--color-border)] pl-3 sm:pl-4">
               <p class="font-mono text-[10px] uppercase tracking-widest text-[var(--color-text-dim)]">Products shipped</p>
               <p class="text-2xl sm:text-3xl font-medium text-[var(--color-text)] mt-1.5 tracking-tight leading-none">
-                <span :ref="(el) => collectStat(el)" data-target="3" data-suffix="">0</span>
+                <span :ref="(el) => collectStat(el)" data-target="4" data-suffix="">0</span>
               </p>
             </div>
             <div class="border-l border-[var(--color-border)] pl-3 sm:pl-4">

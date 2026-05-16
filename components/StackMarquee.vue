@@ -120,6 +120,7 @@ const STACK: TechEntry[] = [
   width: 40px;
   height: 40px;
   flex-shrink: 0;
+  isolation: isolate;
 }
 
 .stack-icon {
