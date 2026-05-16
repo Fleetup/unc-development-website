@@ -1,6 +1,7 @@
 <template>
   <div>
     <SectionHero />
+    <StackMarquee />
     <SectionAbout />
     <MarqueeBand :items="marqueeItems" :duration="52" />
     <SectionWork />
