@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="accentGlow" cx="75%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#FF5C1F" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0A0A0F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bottomGlow" cx="20%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#FF5C1F" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#0A0A0F" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Grid pattern -->
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0A0A0F"/>
+
+  <!-- Grid -->
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.7"/>
+
+  <!-- Accent glows -->
+  <rect width="1200" height="630" fill="url(#accentGlow)"/>
+  <rect width="1200" height="630" fill="url(#bottomGlow)"/>
+
+  <!-- Top border line -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="#FF5C1F" stroke-width="3" opacity="0.9"/>
+
+  <!-- Left accent bar -->
+  <rect x="72" y="180" width="3" height="270" fill="#FF5C1F" opacity="0.6" rx="2"/>
+
+  <!-- Eyebrow label -->
+  <text x="96" y="210" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" letter-spacing="0.18em" fill="#FF5C1F" text-anchor="start" text-transform="uppercase">UNC DEVELOPMENT</text>
+
+  <!-- Pulse dot before eyebrow -->
+  <circle cx="84" cy="205" r="4" fill="#FF5C1F" opacity="0.9"/>
+
+  <!-- Main headline — line 1 -->
+  <text x="96" y="305" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="76" font-weight="500" letter-spacing="-0.03em" fill="#FAFAFA">I build</text>
+
+  <!-- Main headline — line 2 accent word -->
+  <text x="96" y="395" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="76" font-weight="500" letter-spacing="-0.03em" fill="#FF5C1F">production</text>
+  <!-- Wavy underline under "production" -->
+  <path d="M 96 405 Q 196 401 296 405 T 496 405 T 620 405" fill="none" stroke="#FF5C1F" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Main headline — line 3 -->
+  <text x="96" y="480" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="76" font-weight="500" letter-spacing="-0.03em" fill="#FAFAFA">web &amp; mobile apps.</text>
+
+  <!-- Divider line -->
+  <line x1="96" y1="518" x2="500" y2="518" stroke="#27272A" stroke-width="1"/>
+
+  <!-- Byline -->
+  <text x="96" y="556" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" letter-spacing="0.04em" fill="#A1A1AA">Miki Jokovic · Addison, IL · Available June 2026</text>
+
+  <!-- Right side: domain badge -->
+  <rect x="900" y="530" width="228" height="48" rx="24" fill="#18181B" stroke="#27272A" stroke-width="1"/>
+  <text x="1014" y="560" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="500" letter-spacing="0.02em" fill="#FAFAFA" text-anchor="middle">uncdevelopment.com</text>
+
+  <!-- Right accent: services pill stack -->
+  <g transform="translate(870, 175)">
+    <!-- Card background -->
+    <rect width="258" height="290" rx="16" fill="#18181B" stroke="#27272A" stroke-width="1"/>
+
+    <!-- Card header -->
+    <text x="20" y="38" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="0.14em" fill="#71717A">SERVICES</text>
+
+    <!-- Divider -->
+    <line x1="0" y1="54" x2="258" y2="54" stroke="#27272A" stroke-width="1"/>
+
+    <!-- Service items -->
+    <circle cx="20" cy="84" r="3" fill="#FF5C1F"/>
+    <text x="36" y="89" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#FAFAFA">MVP Build</text>
+
+    <circle cx="20" cy="124" r="3" fill="#FF5C1F"/>
+    <text x="36" y="129" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#FAFAFA">Web App Development</text>
+
+    <circle cx="20" cy="164" r="3" fill="#FF5C1F"/>
+    <text x="36" y="169" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#FAFAFA">Mobile App Development</text>
+
+    <circle cx="20" cy="204" r="3" fill="#FF5C1F"/>
+    <text x="36" y="209" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#FAFAFA">AI Integration Sprint</text>
+
+    <circle cx="20" cy="244" r="3" fill="#FF5C1F" opacity="0.4"/>
+    <text x="36" y="249" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#71717A">Monthly Retainer</text>
+
+    <circle cx="20" cy="272" r="3" fill="#FF5C1F" opacity="0.4"/>
+    <text x="36" y="277" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#71717A">Codebase Audit</text>
+  </g>
+</svg>

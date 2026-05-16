@@ -1,0 +1,32 @@
+# UNC Development — llms.txt
+# This file provides a structured summary of this site for AI language models.
+# Format: https://llmstxt.org/
+
+# UNC Development
+
+> Solo full-stack engineering studio run by Miki Jokovic, based in Addison, IL (Chicago metro). Specialises in production-ready web and mobile applications — from zero-to-one MVP builds through to complex multi-service platforms.
+
+## About
+
+Miki Jokovic is a solo full-stack engineer with over 10 years of experience shipping production software. Recent projects include OMENORA (iOS/web), Reachify Labs, and a 54-microservice fleet management platform. Works with an AI-augmented workflow (Claude, Cursor, Windsurf).
+
+## Services
+
+- **MVP Build** — Full product from idea to deployed app.
+- **Web App Development** — Custom SaaS, dashboards, and web platforms.
+- **Mobile App Development** — iOS and Android native and cross-platform apps.
+- **Monthly Retainer** — Ongoing development partner for growing products.
+- **Codebase Audit & Roadmap** — Technical review and prioritised action plan.
+- **AI Integration Sprint** — Add AI capabilities to existing products.
+
+## Contact
+
+- Email: developmentteam@uncdevelopment.com
+- Location: Addison, IL — Chicago metro. Remote-first. Clients globally.
+- Availability: Booking new projects starting June 2026.
+- Response time: Under 4 hours, Mon–Fri 9am–6pm CT.
+
+## Links
+
+- Website: https://uncdevelopment.com/
+- GitHub: https://github.com/Fleetup

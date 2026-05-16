@@ -27,6 +27,41 @@ export default defineNuxtConfig({
     contactFromEmail: process.env.CONTACT_FROM   ?? 'UNC Development <contact@uncdevelopment.com>',
   },
 
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      htmlAttrs: { lang: 'en' },
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        // Preload above-the-fold font weights to eliminate FOUT on LCP text
+        {
+          rel: 'preload',
+          as: 'font',
+          type: 'font/woff2',
+          href: '/fonts/Geist-Regular.woff2',
+          crossorigin: 'anonymous',
+        },
+        {
+          rel: 'preload',
+          as: 'font',
+          type: 'font/woff2',
+          href: '/fonts/Geist-Medium.woff2',
+          crossorigin: 'anonymous',
+        },
+        {
+          rel: 'preload',
+          as: 'font',
+          type: 'font/woff2',
+          href: '/fonts/GeistMono-Regular.woff2',
+          crossorigin: 'anonymous',
+        },
+        // Preconnect to Resend API so the contact form POST starts faster
+        { rel: 'preconnect', href: 'https://api.resend.com' },
+      ],
+    },
+  },
+
   modules: [
     '@nuxt/image',
     '@vueuse/nuxt',

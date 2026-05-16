@@ -1,2 +1,30 @@
 User-Agent: *
-Disallow:
+Allow: /
+Disallow: /api/
+
+# ── AI crawlers — allow for citations and discovery ──────────────────────
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: Claude-Web
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: Applebot
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Googlebot
+Allow: /
+
+User-Agent: Bingbot
+Allow: /
+
+Sitemap: https://uncdevelopment.com/sitemap.xml
