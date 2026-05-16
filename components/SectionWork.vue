@@ -168,6 +168,23 @@ const projects: Project[] = [
     screenshotUrl: 'reachifylabs.com',
   },
   {
+    name: 'Northrive Studio',
+    tagline: 'Brand identity and web presence for a creative studio.',
+    description:
+      'Full-stack marketing site and brand system for a boutique creative studio. Built with Nuxt 3 and Tailwind CSS, with a focus on performance, animation, and a refined visual identity.',
+    stack: ['Nuxt 3', 'Tailwind CSS', 'TypeScript', 'Vercel'],
+    accentStack: ['Nuxt 3', 'Tailwind CSS'],
+    metrics: [
+      { label: 'Performance', value: '100' },
+      { label: 'Deploy',      value: 'Vercel' },
+      { label: 'Type',        value: 'Studio' },
+    ],
+    year: '2025',
+    link: 'https://northrivestudio.com',
+    screenshot: '/frames/Northrive-Studio.webp',
+    screenshotUrl: 'northrivestudio.com',
+  },
+  {
     name: 'TMS / ELD Platform',
     tagline: '54-microservice fleet platform with FMCSA compliance.',
     description:

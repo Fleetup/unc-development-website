@@ -131,6 +131,15 @@ const CARDS: CardDef[] = [
     metaName: 'OMNIA · FLEET',
     metaKind: 'WEB',
   },
+  {
+    id: 4,
+    src: '/frames/Northrive-Studio.webp',
+    label: 'northrivestudio.com',
+    type: 'web',
+    ariaLabel: 'View Northrive Studio',
+    metaName: 'NORTHRIVE STUDIO',
+    metaKind: 'WEB',
+  },
 ]
 const N = CARDS.length
 
