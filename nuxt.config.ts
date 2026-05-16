@@ -7,28 +7,30 @@ export default defineNuxtConfig({
 
   ssr: true,
   nitro: {
-    preset: 'static',
+    // Removed: preset: 'static'
+    // Pure-static preset can't run server/api/* at request time, which the
+    // contact form needs. Without a preset, Nitro auto-detects the deploy
+    // target (Vercel/Netlify/Cloudflare/Node) and uses serverless functions
+    // for /api/* while still prerendering the marketing pages.
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true,
+    },
+  },
+
+  // Server-only config (auto-bound from NUXT_* env vars at runtime; the
+  // process.env fallbacks below are read at build time and embedded as
+  // defaults for local development).
+  runtimeConfig: {
+    resendApiKey:     process.env.RESEND_API_KEY ?? '',
+    contactToEmail:   process.env.CONTACT_TO     ?? 'developmentteam@uncdevelopment.com',
+    contactFromEmail: process.env.CONTACT_FROM   ?? 'UNC Development <contact@uncdevelopment.com>',
   },
 
   modules: [
-    '@nuxtjs/google-fonts',
     '@nuxt/image',
     '@vueuse/nuxt',
   ],
-
-  googleFonts: {
-    families: {
-      Inter: {
-        wght: [400, 500, 600],
-      },
-      'Instrument Serif': {
-        wght: [400],
-        ital: [400],
-      },
-    },
-    display: 'swap',
-    preconnect: true,
-  },
 
   image: {
     quality: 85,
