@@ -33,7 +33,11 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       htmlAttrs: { lang: 'en' },
       link: [
+        // Favicon — ICO for legacy browsers, SVG for modern
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/Log-UNC-Development.svg' },
+        // Apple home screen icon (iOS Safari)
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
         // Preload above-the-fold font weights to eliminate FOUT on LCP text
         {
           rel: 'preload',
