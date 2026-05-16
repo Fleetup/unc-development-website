@@ -81,8 +81,8 @@
             class="font-mono text-[0.9375rem] md:text-body-sm text-[var(--color-text-muted)] max-w-xl mt-8 leading-relaxed opacity-0"
           >
             Solo full-stack engineer. Recent work: OMENORA, Reachify Labs,
-            Northrive Studio, 54-microservice fleet platform. AI-augmented
-            workflow with Claude + Cursor + Windsurf.
+            Northrive Studio, Boni Transportation, fleet platform.
+            AI-augmented workflow with Claude + Cursor + Windsurf.
           </p>
 
           <!-- Live indicator -->
@@ -127,7 +127,7 @@
             <div class="border-l border-[var(--color-border)] pl-3 sm:pl-4">
               <p class="font-mono text-[10px] uppercase tracking-widest text-[var(--color-text-dim)]">Products shipped</p>
               <p class="text-2xl sm:text-3xl font-medium text-[var(--color-text)] mt-1.5 tracking-tight leading-none">
-                <span :ref="(el) => collectStat(el)" data-target="4" data-suffix="">0</span>
+                <span :ref="(el) => collectStat(el)" data-target="5" data-suffix="">0</span>
               </p>
             </div>
             <div class="border-l border-[var(--color-border)] pl-3 sm:pl-4">

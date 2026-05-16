@@ -55,7 +55,7 @@
         :style="eyebrowStyle"
       >
         <span class="pulse-dot" style="background-color: var(--color-accent);" aria-hidden="true" />
-        SELECTED WORK · 04
+        SELECTED WORK · 05
       </p>
 
       <!-- Headline — two-tone like about -->
@@ -183,6 +183,23 @@ const projects: Project[] = [
     link: 'https://northrivestudio.com',
     screenshot: '/frames/Northrive-Studio.webp',
     screenshotUrl: 'northrivestudio.com',
+  },
+  {
+    name: 'Boni Transportation',
+    tagline: 'Web presence for a freight and logistics company.',
+    description:
+      'Marketing site and online presence for a transportation and freight company. Built to establish a professional brand online with clear service communication and contact capabilities.',
+    stack: ['Nuxt 3', 'Tailwind CSS', 'TypeScript', 'Vercel'],
+    accentStack: ['Nuxt 3', 'Tailwind CSS'],
+    metrics: [
+      { label: 'Performance', value: '100' },
+      { label: 'Deploy',      value: 'Vercel' },
+      { label: 'Type',        value: 'Logistics' },
+    ],
+    year: '2025',
+    link: 'https://www.bonytrans.com',
+    screenshot: '/frames/boni-transportation.webp',
+    screenshotUrl: 'bonytrans.com',
   },
   {
     name: 'TMS / ELD Platform',

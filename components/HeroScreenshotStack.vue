@@ -140,6 +140,15 @@ const CARDS: CardDef[] = [
     metaName: 'NORTHRIVE STUDIO',
     metaKind: 'WEB',
   },
+  {
+    id: 5,
+    src: '/frames/boni-transportation.webp',
+    label: 'bonytrans.com',
+    type: 'web',
+    ariaLabel: 'View Boni Transportation',
+    metaName: 'BONI TRANSPORTATION',
+    metaKind: 'WEB',
+  },
 ]
 const N = CARDS.length
 

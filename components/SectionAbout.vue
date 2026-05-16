@@ -164,7 +164,7 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { label: 'Products shipped', value: '04', detail: 'OMENORA · Reachify Labs · Northrive Studio · Fleet platform' },
+  { label: 'Products shipped', value: '05', detail: 'OMENORA · Reachify Labs · Northrive Studio · Boni Transportation · Fleet platform' },
   { label: 'Stack breadth',    value: 'Web · Mobile · Infra', detail: 'Vue · Nuxt · Swift · Go · Postgres' },
   { label: 'Response time',    value: '< 4H',  detail: 'Async-first, deep-work blocks' },
 ]
