@@ -35,7 +35,7 @@
           >
             <span class="inline-flex items-center gap-2.5">
               <span class="pulse-dot" aria-hidden="true" />
-              AVAILABLE FOR NEW PROJECTS · MAY 2026
+              AVAILABLE FOR NEW PROJECTS · JUNE 2026
             </span>
           </p>
 
@@ -81,8 +81,8 @@
             class="font-mono text-[0.9375rem] md:text-body-sm text-[var(--color-text-muted)] max-w-xl mt-8 leading-relaxed opacity-0"
           >
             Solo full-stack engineer. Recent work: OMENORA, Reachify Labs,
-            54-microservice fleet platform. AI-augmented workflow with
-            Claude + Cursor + Windsurf.
+            Northrive Studio, 54-microservice fleet platform. AI-augmented
+            workflow with Claude + Cursor + Windsurf.
           </p>
 
           <!-- Live indicator -->

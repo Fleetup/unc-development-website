@@ -199,7 +199,7 @@ const sitemapLinks = [
 ]
 
 const elsewhereLinks = [
-  { label: 'GitHub',      href: 'https://github.com/mikijokovic' },
+  { label: 'GitHub',      href: 'https://github.com/Fleetup' },
   { label: 'LinkedIn',    href: 'https://linkedin.com/in/miroslavjokovic' },
   { label: 'X / Twitter', href: 'https://x.com/mikijokovic' },
 ]

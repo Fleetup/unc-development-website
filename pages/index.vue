@@ -21,6 +21,7 @@ const marqueeItems = [
   'Shipping fast',
   'OMENORA',
   'Reachify Labs',
+  'Northrive Studio',
   '54 microservices',
   'Solo full-stack',
   'Claude · Cursor · Windsurf',

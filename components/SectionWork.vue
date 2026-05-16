@@ -55,7 +55,7 @@
         :style="eyebrowStyle"
       >
         <span class="pulse-dot" style="background-color: var(--color-accent);" aria-hidden="true" />
-        SELECTED WORK · 03
+        SELECTED WORK · 04
       </p>
 
       <!-- Headline — two-tone like about -->
