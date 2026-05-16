@@ -13,13 +13,12 @@
               :src="tech.src"
               :alt="tech.name"
               class="stack-icon"
-              width="20"
-              height="20"
+              width="40"
+              height="40"
               loading="lazy"
               draggable="false"
             />
           </span>
-          <span class="stack-label">{{ tech.name }}</span>
         </span>
       </span>
     </div>
@@ -60,6 +59,8 @@ const STACK: TechEntry[] = [
   position: relative;
   width: 100%;
   overflow: hidden;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   padding: 28px 0;
   /* Edge fade matching MarqueeBand */
   mask-image: linear-gradient(
@@ -101,15 +102,14 @@ const STACK: TechEntry[] = [
 .stack-marquee-item {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
-  padding: 0 28px;
-  opacity: 0.32;
+  padding: 0 36px;
+  opacity: 0.4;
   transition: opacity 280ms ease;
   cursor: default;
 }
 
 .stack-marquee:hover .stack-marquee-item:hover {
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 /* ── Icon ───────────────────────────────────────────────────────────────── */
@@ -117,28 +117,18 @@ const STACK: TechEntry[] = [
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   flex-shrink: 0;
 }
 
 .stack-icon {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   /* Convert coloured SVGs to muted white — matches the dark theme */
   filter: brightness(0) invert(1);
   display: block;
-}
-
-/* ── Label ──────────────────────────────────────────────────────────────── */
-.stack-label {
-  font-family: var(--font-mono, monospace);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-  white-space: nowrap;
 }
 
 /* ── Keyframe ───────────────────────────────────────────────────────────── */
