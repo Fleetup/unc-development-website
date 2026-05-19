@@ -103,7 +103,7 @@ useHead({
               'MVP Development',
             ],
             sameAs: [
-              'https://github.com/Fleetup',
+              'https://github.com/miroslav-jokovic',
             ],
           },
           {

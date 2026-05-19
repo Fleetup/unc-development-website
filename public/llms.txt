@@ -29,4 +29,4 @@ Miki Jokovic is a solo full-stack engineer with over 10 years of experience ship
 ## Links
 
 - Website: https://uncdevelopment.com/
-- GitHub: https://github.com/Fleetup
+- GitHub: https://github.com/miroslav-jokovic
